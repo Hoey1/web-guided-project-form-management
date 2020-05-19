@@ -33,6 +33,9 @@ export default function FriendForm(props) {
             placeholder='Type a username'
             maxLength='5'
             name='username'
+            // very important props for controlled, state-driven inputs
+            value={values.username}
+            onChange={onInputChange}
           />
         </label>
 
