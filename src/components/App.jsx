@@ -56,11 +56,19 @@ export default function App() {
     // c) make a new friend object
     //    set up the new friend with the correct attributes
     //    using the information inside the state of the form
-    const newFriend = {
-      // >>>>> ?? <<<<<<<
-    }
+
+    // const newFriend = {
+    //   id: uuid(),
+    //   username: formValues.username,
+    //   email: formValues.email,
+    //   role: formValues.role
+    // }
+    const newFriend = { ...formValues, id: uuid() }
     // d) update the list of friends in state with the new friend
+    // setFriends(friends.concat(newFriend))
+    setFriends([ newFriend, ...friends ])
     // e) optionally clear the form
+    debugger
   }
 
   return (
