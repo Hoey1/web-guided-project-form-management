@@ -68,7 +68,7 @@ export default function App() {
     // setFriends(friends.concat(newFriend))
     setFriends([ newFriend, ...friends ])
     // e) optionally clear the form
-    debugger
+    setFormValues(initialFormValues)
   }
 
   return (
