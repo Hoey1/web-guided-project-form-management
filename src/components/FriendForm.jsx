@@ -60,8 +60,8 @@ export default function FriendForm(props) {
               <option value='' >Select a Role</option>
               <option value='Student'>Student</option>
               <option value='Instructor'>Instructor</option>
-              <option value='Alumni'>Instructor</option>
-              <option value='TL'>Instructor</option>
+              <option value='Alumni'>Alumni</option>
+              <option value='TL'>TL</option>
           </select>
         </label>
       </div>
