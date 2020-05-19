@@ -37,6 +37,7 @@ export default function App() {
     // b) pull the value of the input from the event object
     const { value } = evt.target
     // c) set a new state for the whole form
+    setFormValues({ ...formValues, [name]: value })
   }
 
   const onSubmit = evt => {
