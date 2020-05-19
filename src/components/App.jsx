@@ -33,7 +33,9 @@ export default function App() {
     // which can change the state of inputs of type text
 
     // a) pull the name of the input from the event object
+    const { name } = evt.target
     // b) pull the value of the input from the event object
+    const { value } = evt.target
     // c) set a new state for the whole form
   }
 
